@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html lang="cz">
+
+<head>
+    <title>Megashop</title>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="all-content">
+        <header>
+            <h1>Megashop zvířátek</h1>
+            <nav class="horizontal-menu">
+                <button type="button" onclick="location.href='./index.html'">Domů</button>
+                <button type="button" onclick="location.href='./kategorie.html'">Kategorie</button>
+                <button type="button" onclick="location.href='./doprava.html'">Doprava</button>
+                <button type="button" onclick="location.href='./kosik.html'">Košík</button>
+                <input type="text" id="search-txt" name="search" placeholder="Hledej">
+                <button class="search-btn" type="button" onclick="location.href='./vyhledavani.html'">
+                    <label for="search-txt">Hledej</label>
+                </button>
+            </nav>
+        </header>
+
+        <main class="shop-window">
+            <article>
+                <header>
+                    <h2>Mainská mývalí kočka</h2>
+                </header>
+                <section class="zakladni-popis">
+                    <figure class="detail-image">
+                        <img src="https://fastly.picsum.photos/id/328/400/500.jpg?hmac=A-AB-4obM9YDRJ48uP-DVXUWmQGcQW2IqLG9HFJp7t8"
+                            alt="Majestátní delfín.">
+                        <figcaption>*Lorem ipsum dolor sit amet.</figcaption>
+                    </figure>
+                    <section>
+                        <h3>Základní popis</h3>
+                        <p>Kategorie: Savci</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin mattis lacinia justo. Duis
+                            condimentum augue id magna semper rutrum. Sed convallis magna eu sem. Fusce tellus odio,
+                            dapibus id fermentum quis, suscipit id erat. Neque porro quisquam.</p>
+                        <p class="cena-produktu"><b>14 999 Kč</b></p>
+                        <button class="pridat" type="button">Přidat do košíku</button>
+                    </section>
+                </section>
+                <section class="detail-produktu">
+                    <h3>Specifikace</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin mattis lacinia justo. Duis
+                        condimentum augue id magna semper rutrum. Sed convallis magna eu sem. Fusce tellus odio, dapibus
+                        id fermentum quis, suscipit id erat. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+                        amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                        dolore magnam aliquam quaerat voluptatem. Aenean id metus id velit ullamcorper pulvinar.
+                        Phasellus faucibus molestie nisl. Mauris suscipit, ligula sit amet pharetra semper, nibh ante
+                        cursus purus, vel sagittis velit mauris vel metus. Maecenas fermentum, sem in pharetra
+                        pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Nulla non arcu
+                        lacinia neque faucibus fringilla. Aliquam in lorem sit amet leo accumsan lacinia. Nulla non
+                        lectus sed nisl molestie malesuada. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                        odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                        Mauris tincidunt sem sed arcu. Nam sed tellus id magna elementum tincidunt. Maecenas aliquet
+                        accumsan leo. Praesent dapibus. Nunc tincidunt ante vitae massa.</p>
+                </section>
+                <section>
+                    <h3>Fotogalerie</h3>
+                    <section class="gallery">
+                        <figure class="gallery-img long">
+                            <img src="https://fastly.picsum.photos/id/30/1600/800.jpg?hmac=iJUVOXAMmcd4Hu5OhI8R93kJu80ZM173MjKMtMSL8UA"
+                                alt="Delfín z boku.">
+                            <figcaption>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin mattis lacinia
+                                justo.</figcaption>
+                        </figure>
+                        <figure class="gallery-img">
+                            <img src="https://fastly.picsum.photos/id/111/800/400.jpg?hmac=0XK_vKEwPd3OH81BFn-V04rRl3x3QgFUMOAzR4q--eQ"
+                                alt="Detailní foto delfíní ploutve.">
+                            <figcaption>Lorem ipsum dolor sit amet.</figcaption>
+                        </figure>
+                        <figure class="gallery-img">
+                            <img src="https://fastly.picsum.photos/id/903/800/400.jpg?hmac=0E8gHdvxRbtch5EHC0HU41nLzsbupvHIh7cvJ077ntA"
+                                alt="Delfíní kůže.">
+                            <figcaption>Lorem ipsum.</figcaption>
+                        </figure>
+                        <figure class="gallery-img long">
+                            <img src="https://fastly.picsum.photos/id/1074/1600/800.jpg?hmac=W4d1iE4eedZv2Rk9cUGmFQGoThLigUL_SROn7mFhE2c"
+                                alt="Delfíní pohled.">
+                            <figcaption>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</figcaption>
+                        </figure>
+                    </section>
+                </section>
+                <section>
+                    <h3>Hodnocení uživatelů: 4,5/5</h3>
+                    <section class="sekce-hodnoceni">
+                        <article class="hodnoceni">
+                            <div class="text">
+                                <section class="hodnoceni-left">
+                                    <p>Karel J</p>
+                                    <p><time datetime="2023-02-14 20:00">14. února 2023</time></p>
+                                    <p>5/5</p>
+                                </section>
+                                <section class="hodnoceni-right">
+                                    <p>Nam sed tellus id magna elementum tincidunt. Integer rutrum, orci vestibulum
+                                        ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit
+                                        amet enim. Fusce consectetuer risus a nunc. Nemo enim ipsam voluptatem quia
+                                        voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+                                        eos qui ratione voluptatem sequi nesciunt.</p>
+                                </section>
+                            </div>
+                        </article>
+                        <article class="hodnoceni">
+                            <div class="text">
+                                <section class="hodnoceni-left">
+                                    <p>Anonym</p>
+                                    <p><time datetime="2023-02-14 20:00">14. února 2023</time></p>
+                                    <p>4/5</p>
+                                </section>
+                                <section class="hodnoceni-right">
+                                    <p>Nam sed tellus id magna elementum tincidunt. Integer rutrum, orci vestibulum
+                                        ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit
+                                        amet enim. Fusce consectetuer risus a nunc. Nemo enim ipsam voluptatem quia
+                                        voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+                                        eos qui ratione voluptatem sequi nesciunt.</p>
+                                </section>
+                            </div>
+                        </article>
+                    </section>
+                </section>
+                <aside>
+                    <h3>Podobná zvířátka</h3>
+                    <section class="item-container">
+                        <article class="item">
+                            <header>
+                                <a href="./detail1.html">
+                                    <h3 class="index-h3">Perská kočka</h3>
+                                </a>
+                            </header>
+                            <section>
+                                <i>Lorem ipsum dolor sit amet.</i>
+                                <img src="https://fastly.picsum.photos/id/328/400/500.jpg?hmac=A-AB-4obM9YDRJ48uP-DVXUWmQGcQW2IqLG9HFJp7t8"
+                                    alt="Perská kočka.">
+                            </section>
+                        </article>
+                        <article class="item">
+                            <header>
+                                <a href="./detail1.html">
+                                    <h3 class="index-h3">Norská lesní kočka</h3>
+                                </a>
+                            </header>
+                            <section>
+                                <i>Lorem ipsum dolor sit amet.</i>
+                                <img src="https://fastly.picsum.photos/id/563/400/500.jpg?hmac=gsnqTTd7vXInAVFfMs_EeySvgQXZz-DLo2ee0fL_uhE"
+                                    alt="Norská lesní kočka.">
+                            </section>
+                        </article>
+                        <article class="item">
+                            <header>
+                                <a href="./detail1.html">
+                                    <h3 class="index-h3">Egyptská mau</h3>
+                                </a>
+                            </header>
+                            <section>
+                                <i>Lorem ipsum dolor sit amet.</i>
+                                <img src="https://fastly.picsum.photos/id/704/400/500.jpg?hmac=1j7g3mlkMVbbf0xyQg_BZZjPDFVc4XhPrydXdhEqYi0"
+                                    alt="Egyptská mau.">
+                            </section>
+                        </article>
+                        <article class="item">
+                            <header>
+                                <a href="./detail1.html">
+                                    <h3 class="index-h3">Siamská kočka</h3>
+                                </a>
+                            </header>
+                            <section>
+                                <i>Lorem ipsum dolor sit amet.</i>
+                                <img src="https://fastly.picsum.photos/id/237/400/500.jpg?hmac=Hr3GNrOhSXNqxEL2HpWa-Mk1JvleuHF3b0ar8pUX6hI"
+                                    alt="Siamská kočka.">
+                            </section>
+                        </article>
+                    </section>
+                </aside>
+            </article>
+        </main>
+
+        <footer>
+            <i>Studentský projekt vytvořili ke dni <time datetime="2023-12-11"> 11. prosince 2023 studenti ČZU Radek
+                    Kolanda, Zdeněk Šimůnek a Matěj Krečmer.</i>
+        </footer>
+    </main>
+
+</body>
+
+</html>

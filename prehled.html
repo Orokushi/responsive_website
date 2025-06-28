@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="cz">
+
+<head>
+  <title>Megashop</title>
+  <meta charset='utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="all-content">
+    <header>
+      <h1>Megashop zvířátek</h1>
+      <nav class="horizontal-menu">
+        <button type="button" onclick="location.href='./index.html'">Domů</button>
+        <button type="button" onclick="location.href='./kategorie.html'">Kategorie</button>
+        <button type="button" onclick="location.href='./doprava.html'">Doprava</button>
+        <button type="button" class="active-btn" onclick="location.href='./kosik.html'">Košík</button>
+        <input type="text" id="search-txt" name="search" placeholder="Hledej">
+        <button class="search-btn" type="button" onclick="location.href='./vyhledavani.html'">
+          <label for="search-txt">Hledej</label>
+        </button>
+      </nav>
+    </header>
+
+    <main class="shop-window">
+      <header>
+        <h2>Přehled</h2>
+      </header>
+      <article class="prehled-content">
+        <form action="/action_page.php">
+          <section>
+            <table class="faktura">
+              <thead>
+                <tr>
+                  <th>Zboží</th>
+                  <th>Počet ks</th>
+                  <th>Cena</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="./detail1.html">Gekon zmijový</a></td>
+                  <td>2</td>
+                  <td>1 998</td>
+                </tr>
+                <tr>
+                  <td><a href="./detail1.html">Ara ararauna</a></td>
+                  <td>1</td>
+                  <td>55 499</td>
+                </tr>
+                <tr>
+                  <td><a href="./detail1.html">Bojovnice pestrá</a></td>
+                  <td>5</td>
+                  <td>1 095</td>
+                </tr>
+                <tr>
+                  <td>Zásilkovna</td>
+                  <td>1</td>
+                  <td>59</td>
+                </tr>
+                <tr>
+                  <td>DPH</td>
+                  <td>1</td>
+                  <td>12 317</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>Total</td>
+                  <td>9</td>
+                  <td>70 968</td>
+                </tr>
+              </tfoot>
+            </table>
+            <table class="faktura-adresa">
+              <thead>
+                <tr>
+                  <th>Adresa</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Emil Zátopek</td>
+                </tr>
+                <tr>
+                  <td>Prášilova 12</td>
+                <tr>
+                  <td>Praha 10</td>
+                </tr>
+                <tr>
+                  <td>10000</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <input type="checkbox" id="spam" name="spam" value="spam" checked>
+          <label for="spam">Chci dostávat newsletter</label><br><br><br>
+          <button class="orderflow-button" type="button" onclick="location.href='./adresa.html'">Zpět</button>
+          <button class="orderflow-button" id="objednat" type="button"
+            onclick="location.href='./vyrizeno.html'">Objednat</button>
+        </form>
+      </article>
+    </main>
+
+    <footer>
+      <i>Studentský projekt vytvořili ke dni <time datetime="2023-12-11"> 11. prosince 2023 studenti ČZU Radek Kolanda,
+          Zdeněk Šimůnek a Matěj Krečmer.</i>
+    </footer>
+  </main>
+
+</body>
+
+</html>

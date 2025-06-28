@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="cz">
+
+<head>
+    <title>Megashop</title>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="all-content">
+        <header>
+            <h1>Megashop zvířátek</h1>
+            <nav class="horizontal-menu">
+                <button type="button" onclick="location.href='./index.html'">Domů</button>
+                <button type="button" onclick="location.href='./kategorie.html'">Kategorie</button>
+                <button type="button" onclick="location.href='./doprava.html'">Doprava</button>
+                <button type="button" class="active-btn" onclick="location.href='./kosik.html'">Košík</button>
+                <input type="text" id="search-txt" name="search" placeholder="Hledej">
+                <button class="search-btn" type="button" onclick="location.href='./vyhledavani.html'">
+                    <label for="search-txt">Hledej</label>
+                </button>
+            </nav>
+        </header>
+
+        <main class="shop-window">
+            <header>
+                <h2>Košík</h2>
+            </header>
+            <section class="content">
+                <article id="kosik">
+                    <section class="zbozi">
+                        <div class="zbozi-row">
+                            <div><img
+                                    src="https://fastly.picsum.photos/id/367/80/80.jpg?hmac=gJGU19JEJ8xmhmdZ7PYQjjuQLeh4CN72yp1eWq5yu7I"
+                                    alt="Ikona gekona zmijového."></div>
+                            <div><a href="./detail1.html">Gekon zmijový</a></div>
+                        </div>
+                        <div class="zbozi-row mnozstvi">
+                            <div><button type="button">-</button></div>
+                            <div>2 ks</div>
+                            <div><button type="button">+</button></div>
+                        </div>
+                        <div class="zbozi-row">
+                            <div><b>1 998,-</b></div>
+                        </div>
+                        <div class="zbozi-row">
+                            <div><button class="odebrat" type="button">Odebrat</button></div>
+                        </div>
+                    </section>
+                    <section class="zbozi">
+                        <div class="zbozi-row">
+                            <div><img
+                                    src="https://fastly.picsum.photos/id/683/80/80.jpg?hmac=VP8xKj2yNxTW0fVI9E6TJn_Z0UwGEu1Zfpk8gf3h3i4"
+                                    alt="Ikona ary ararauny."></div>
+                            <div><a href="./detail1.html">Ara ararauna</a></div>
+                        </div>
+                        <div class="zbozi-row mnozstvi">
+                            <div><button type="button">-</button></div>
+                            <div>1 ks</div>
+                            <div><button type="button">+</button></div>
+                        </div>
+                        <div class="zbozi-row">
+                            <div><b>55 499,-</b></div>
+                        </div>
+                        <div class="zbozi-row">
+                            <div><button class="odebrat" type="button">Odebrat</button></div>
+                        </div>
+                    </section>
+                    <section class="zbozi">
+                        <div class="zbozi-row">
+                            <div><img
+                                    src="https://fastly.picsum.photos/id/433/80/80.jpg?hmac=nnXbmg-946qs0HbRki1Lz6FU3douBYthDcxYSSPPZEw"
+                                    alt="Ikona bojovnice pestré."></div>
+                            <div><a href="./detail1.html">Bojovnice pestrá</a></div>
+                        </div>
+                        <div class="zbozi-row mnozstvi">
+                            <div><button type="button">-</button></div>
+                            <div>5 ks</div>
+                            <div><button type="button">+</button></div>
+                        </div>
+                        <div class="zbozi-row">
+                            <div><b>1 095,-</b></div>
+                        </div>
+                        <div class="zbozi-row">
+                            <div><button class="odebrat" type="button">Odebrat</button></div>
+                        </div>
+                    </section>
+                </article>
+                <form id="kosik-form" action="/action_page.php">
+                    <section id="kosik-doprava">
+                        <b>Vyberte dopravu:</b><br>
+                        <input type="radio" id="zasilkovna" name="doprava" value="Zásilkovna">
+                        <label for="zasilkovna">Zásilkovna (59Kč)</label><br>
+                        <input type="radio" id="ppl" name="doprava" value="PPL">
+                        <label for="ppl">PPL (79Kč)</label><br>
+                        <input type="radio" id="osobne" name="doprava" value="Prodejna">
+                        <label for="osobne">Osobní vyzvednutí na prodejně (0Kč)</label>
+                    </section>
+
+                    <section id="kosik-platba">
+                        <b>Platba:</b><br>
+                        <input type="radio" id="karta" name="platba" value="Karta">
+                        <label for="karta">Kartou online (0Kč)</label><br>
+                        <input type="radio" id="prevod" name="platba" value="Prevod">
+                        <label for="prevod">Bankovním převodem (0Kč)</label><br>
+                        <input type="radio" id="hotovost" name="platba" value="Hotovost">
+                        <label for="hotovost">V hotovosti (39Kč)</label>
+                    </section>
+
+                    <section id="kosik-total">
+
+                        <b>Total: 58 592,- bez DPH</b><br>
+                        <button class="kosik-orderflow-button" type="button"
+                            onclick="location.href='./adresa.html'">Dále</button>
+
+                    </section>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <i>Studentský projekt vytvořili ke dni <time datetime="2023-12-11"> 11. prosince 2023 studenti ČZU Radek
+                    Kolanda, Zdeněk Šimůnek a Matěj Krečmer.</i>
+        </footer>
+    </main>
+
+</body>
+
+</html>

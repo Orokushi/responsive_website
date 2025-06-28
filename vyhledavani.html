@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="cz">
+
+<head>
+    <title>Megashop</title>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="all-content">
+        <header>
+            <h1>Megashop zvířátek</h1>
+            <nav class="horizontal-menu">
+                <button type="button" onclick="location.href='./index.html'">Domů</button>
+                <button type="button" onclick="location.href='./kategorie.html'">Kategorie</button>
+                <button type="button" onclick="location.href='./doprava.html'">Doprava</button>
+                <button type="button" onclick="location.href='./kosik.html'">Košík</button>
+                <input type="text" id="search-txt" name="search" value="Savec">
+                <button class="search-btn active-btn" type="button" onclick="location.href='./vyhledavani.html'">
+                    <label for="search-txt">Hledej</label>
+                </button>
+            </nav>
+        </header>
+
+        <main class="shop-window">
+            <header>
+                <h2>Výsledky vyhledávání: Savec</h2>
+            </header>
+            <section class="item-container">
+                <article class="item">
+                    <header>
+                        <a href="./detail1.html">
+                            <h3>Tibetský španěl</h3>
+                        </a>
+                    </header>
+                    <section>
+                        <i>Lorem ipsum dolor sit amet.</i>
+                        <img src="https://fastly.picsum.photos/id/328/400/500.jpg?hmac=A-AB-4obM9YDRJ48uP-DVXUWmQGcQW2IqLG9HFJp7t8"
+                            alt="Tibetský španěl.">
+                    </section>
+                </article>
+                <article class="item">
+                    <header>
+                        <a href="./detail1.html">
+                            <h3>Králík domácí</h3>
+                        </a>
+                    </header>
+                    <section>
+                        <i>Lorem ipsum dolor sit amet.</i>
+                        <img src="https://fastly.picsum.photos/id/923/400/500.jpg?hmac=T7qZ4QYgJLSMjeyHBaRHgPtC8djBJfczvZlGNraU98k"
+                            alt="Králík domácí.">
+                    </section>
+                </article>
+                <article class="item">
+                    <header>
+                        <a href="./detail1.html">
+                            <h3>Mainská mývalí kočka</h3>
+                        </a>
+                    </header>
+                    <section>
+                        <i>Lorem ipsum dolor sit amet.</i>
+                        <img src="https://fastly.picsum.photos/id/704/400/500.jpg?hmac=1j7g3mlkMVbbf0xyQg_BZZjPDFVc4XhPrydXdhEqYi0"
+                            alt="Mainská mývalí kočka.">
+                    </section>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <i>Studentský projekt vytvořili ke dni <time datetime="2023-12-11"> 11. prosince 2023 studenti ČZU Radek
+                    Kolanda, Zdeněk Šimůnek a Matěj Krečmer.</i>
+        </footer>
+    </main>
+
+</body>
+
+</html>

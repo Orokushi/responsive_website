@@ -1,0 +1,580 @@
+﻿/* CSS Document */
+
+html {
+    --full-size: 80%;
+    --text-bg: #ffe5ec;
+    --text-color: black;
+    --inverse-text-color: #fff0f3;
+    --main-color-passive: #ffd9b1;
+    --sec-color-passive: lightblue;
+    --main-color-interactive: #7ca7d5;
+    --sec-color-interactive: #7ca7d5;
+    --main-color-active: #bde0fe;
+    --button-border: 1px solid rgba(0, 0, 0, 0.25);
+
+}
+
+header,
+.item,
+footer {
+    overflow: auto;
+}
+
+p {
+    margin: 0;
+    padding: 0 3% 0 3%;
+    max-width: 100%;
+    text-align: justify;
+    hyphens: auto;
+}
+
+i {
+    margin: 0;
+    text-align: center;
+}
+
+table,
+th,
+td {
+    border: thin solid black;
+    border-collapse: collapse;
+}
+
+thead,
+tfoot {
+    font-weight: bold;
+}
+
+#kosik-doprava,
+#kosik-platba {
+    margin-top: 3%;
+}
+
+#kosik-form {
+    padding: 3%
+}
+
+.all-content {
+    background-color: var(--main-color-passive);
+    margin: 0;
+    width: 100%;
+}
+
+body {
+    background-image: url(https://fastly.picsum.photos/id/603/2000/1200.jpg?blur=3&hmac=-G3CxLruGVjUxhfuz_ZyG_ZsecdegKdEhQAokmS4U7o);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: var(--main-color-passive);
+    margin: 0;
+}
+
+header {
+    background-color: var(--main-color-passive);
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+    text-align: left;
+    padding-left: 3%;
+}
+
+.index-h3 {
+    font-size: 1em;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.index-h3:hover {
+    color: var(--sec-color-interactive);
+}
+
+h3 {
+    font-size: 1em;
+    padding-left: 3%;
+}
+
+.adresa-h3 {
+    font-size: 1em;
+    padding: 0;
+}
+
+
+nav {
+    background-color: var(--sec-color-interactive);
+}
+
+section {
+    background-color: var(--main-color-passive);
+}
+
+.zbozi-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.odebrat {
+    color: #ffffff;
+    background-color: #FF8000;
+    font-size: 1em;
+    border: none;
+    padding: 1em 2em;
+    cursor: pointer;
+}
+
+.mnozstvi button {
+    height: 1em;
+    width: 1em;
+    background-color: #7ca7d5;
+    font-size: 2em;
+    text-align: center;
+    padding: 0px;
+    line-height: 0px;
+}
+
+.adresa {
+    padding: 0 3% 0 3%;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=checkbox] {
+    width: 25px;
+    height: 25px;
+    padding: 3%;
+    box-sizing: border-box;
+}
+
+input[type=radio] {
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+}
+
+#search-txt {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+table {
+    margin: auto;
+}
+
+.faktura {
+    width: 100%;
+    padding: 3%;
+    margin-bottom: 3%;
+    background-color: white;
+}
+
+.faktura-adresa {
+    width: fit-content;
+    padding: 3%;
+    margin-bottom: 3%;
+    text-align: center;
+    background-color: white;
+}
+
+.faktura td:nth-child(2) {
+    text-align: end;
+}
+
+.faktura td:nth-child(2):after {
+    content: ' ks';
+}
+
+.faktura td:nth-child(3) {
+    text-align: end;
+}
+
+.faktura td:nth-child(3):after {
+    content: ' Kč';
+}
+
+#na-prehled {
+    float: right;
+}
+
+#objednat {
+    float: right;
+}
+
+.shop-window {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-color-passive);
+}
+
+.item-container {
+    display: grid;
+    border-top: 3px solid #7ca7d5;
+    border-bottom: 3px solid #7ca7d5;
+}
+
+.item {
+    margin: auto;
+    text-align: center;
+    border: 3px solid #7ca7d5;
+}
+
+.item img {
+    width: 80%;
+    padding: 3%;
+}
+
+.content {
+    border-top: 3px solid #7ca7d5;
+    border-bottom: 3px solid #7ca7d5;
+    padding: 3% 0 3% 0;
+}
+
+.prehled-content {
+    border-top: 3px solid #7ca7d5;
+    border-bottom: 3px solid #7ca7d5;
+    padding: 3%;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    padding: 3%;
+}
+
+.horizontal-menu {
+    display: flex;
+}
+
+.horizontal-menu>* {
+    display: inline-block;
+    border-style: solid;
+}
+
+.horizontal-menu>button {
+    color: #ffffff;
+    background-color: var(--main-color-interactive);
+    font-size: 1em;
+    flex-basis: 20%;
+    transition: 0.3s;
+    box-sizing: border-box;
+    padding: 1em 2em;
+    cursor: pointer;
+    border: var(--button-border);
+}
+
+.horizontal-menu>button:hover {
+    color: var(--main-color-interactive);
+    background-color: #ffffff;
+}
+
+.orderflow-button {
+    color: #ffffff;
+    background-color: var(--main-color-interactive);
+    font-size: 1em;
+    border: var(--button-border);
+    padding: 1em 2em;
+    cursor: pointer;
+    flex-basis: 20%;
+    transition: 0.3s;
+    box-sizing: border-box;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.prehled-content .orderflow-button{
+    margin: 0;
+}
+
+.orderflow-button:hover {
+    color: var(--main-color-interactive);
+    background-color: #ffffff;
+}
+
+.kosik-orderflow-button {
+    color: #ffffff;
+    background-color: var(--main-color-interactive);
+    font-size: 1em;
+    border: var(--button-border);
+    padding: 1em 2em;
+    cursor: pointer;
+    flex-basis: 20%;
+    transition: 0.3s;
+    box-sizing: border-box;
+    align-items: center;
+    margin-top: 3%;
+}
+
+figcaption {
+    font-size: 0.75em;
+    font-style: italic;
+    text-align: right;
+
+}
+
+.pridat {
+    color: var(--inverse-text-color);
+    background-color: var(--main-color-interactive);
+    font-size: 1em;
+    border: none;
+    padding: 1em 2em;
+    cursor: pointer;
+    margin: 10px 20px;
+    float: right;
+}
+
+.pridat:hover {
+    color: var(--main-color-interactive);
+    background-color: #ffffff;
+}
+
+.cena-produktu {
+    margin: 0;
+    padding-left: 3%;
+    text-align: right;
+    font-size: 1.5em;
+}
+
+.detail-image {
+    float: left;
+    width: 100%;
+    max-width: fit-content;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    background-color: var(--main-color-passive);
+    padding: 3%;
+
+}
+
+.detail-image img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.zakladni-popis {
+    float: left;
+    display: block;
+    border-top: 3px solid #7ca7d5;
+    width:100%;
+    max-width:100%;
+}
+
+.sekce-hodnoceni {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 0 3% 0 3%;
+}
+
+.hodnoceni {
+    background-color: var(--main-color-passive);
+    flex: 20%;
+    max-width: 100%;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.hodnoceni:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.hodnoceni-left {
+    width: 30%;
+    float: left;
+    font-weight: bold;
+}
+
+.hodnoceni .text {
+    display: block;
+    overflow: auto;
+}
+
+.hodnoceni-left>p {
+    padding: 5px;
+}
+
+
+.hodnoceni-right {
+    width: 70%;
+    float: left;
+    background-color: white;
+    padding: 3%;
+    box-sizing: border-box;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+    background-color: var(--main-color-passive);
+    padding: 5px;
+    max-width: 1600px;
+    margin: auto;
+}
+
+#kosik {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 0 3% 0 3%;
+}
+
+.zbozi {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    border: 1px solid;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+}
+
+.zbozi-row>div {
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+.zbozi>.right {
+    margin-left: auto;
+    align-items: center;
+}
+
+#kosik-total {
+    margin-top: 3%;
+    text-align: center;
+    overflow: auto;
+}
+
+.horizontal-menu>.active-btn {
+    color: var(--text-color);
+    background-color: var(--main-color-active);
+}
+
+.gallery-img {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px;
+}
+
+
+.gallery img {
+    max-width: 100%;
+}
+
+.gallery {
+    grid-template-columns: auto;
+}
+
+.gallery .long {
+    grid-column: 1 / span 1;
+}
+
+.horizontal-menu {
+    flex-direction: column;
+}
+
+.search-btn {
+    margin-left: 0;
+}
+
+@media only screen and (min-width: 800px) {
+
+    .adresa input[type=text] {
+        max-width: 300px;
+    }
+
+    .gallery .long {
+        grid-column: 1 / span 2;
+    }
+
+    .all-content {
+
+        width: var(--full-size);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .horizontal-menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .horizontal-menu>* {
+        flex: 1 1 30%;
+    }
+
+    .detail-image {
+        width: 30%;
+        margin-right: 20px;
+    }
+
+    .zbozi {
+        flex-direction: row;
+    }
+
+    #kosik {
+        width: auto;
+    }
+
+    .zbozi .mnozstvi {
+        margin-left: auto;
+    }
+
+    #search-txt {
+        max-width: 250px;
+        margin-left: auto;
+    }
+
+}
+
+@media only screen and (min-width: 1400px) {
+    .horizontal-menu {
+        flex-wrap: nowrap;
+    }
+
+    .detail-image {
+        width: 20%;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .item-container {
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .item-container {
+        grid-template-columns: 33% 33% 33%;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .item-container {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}
+
+@media only screen and (min-width: 2200px) {
+    .item-container {
+        grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+}

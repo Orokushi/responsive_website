@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="cz">
+
+<head>
+    <title>Megashop</title>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="all-content">
+        <header>
+            <h1>Megashop zvířátek</h1>
+            <nav class="horizontal-menu">
+                <button type="button" onclick="location.href='./index.html'">Domů</button>
+                <button type="button" onclick="location.href='./kategorie.html'">Kategorie</button>
+                <button type="button" onclick="location.href='./doprava.html'">Doprava</button>
+                <button type="button" class="active-btn" onclick="location.href='./kosik.html'">Košík</button>
+                <input type="text" id="search-txt" name="search" placeholder="Hledej">
+                <button class="search-btn" type="button" onclick="location.href='./vyhledavani.html'">
+                    <label for="search-txt">Hledej</label>
+                </button>
+            </nav>
+        </header>
+
+        <main class="shop-window">
+            <header>
+                <h2>Adresa</h2>
+            </header>
+            <article class="content">
+                <form action="/action_page.php">
+                    <section class="adresa">
+                        <label for="firma">Nakupuji na firmu</label>
+                        <input type="checkbox" id="firma" name="firma" value="firma"><br>
+                        <br>
+                        <label for="mail">E-mail:</label><br>
+                        <input type="text" id="mail" name="mail"><br>
+                        <label for="telefon">Telefon:</label><br>
+                        <input type="text" id="telefon" name="telefon"><br>
+                        <h3 class="adresa-h3">Doručovací adresa</h3>
+                        <label for="jmeno">Jméno:</label><br>
+                        <input type="text" id="jmeno" name="jmeno"><br>
+                        <label for="prijmeni">Příjmení:</label><br>
+                        <input type="text" id="prijmeni" name="prijmeni"><br>
+                        <label for="mesto">Město:</label><br>
+                        <input type="text" id="mesto" name="mesto"><br>
+                        <label for="ulice">Ulice a č.p.:</label><br>
+                        <input type="text" id="ulice" name="ulice"><br>
+                        <label for="psc">PSČ:</label><br>
+                        <input type="text" id="psc" name="psc"><br><br>
+                    </section>
+                    <section class="adresa">
+                        <h3 class="adresa-h3">Fakturovací adresa</h3>
+                        <label for="fjmeno">Jméno:</label><br>
+                        <input type="text" id="fjmeno" name="fjmeno"><br>
+                        <label for="fprijmeni">Příjmení:</label><br>
+                        <input type="text" id="fprijmeni" name="fprijmeni"><br>
+                        <label for="fmesto">Město:</label><br>
+                        <input type="text" id="fmesto" name="fmesto"><br>
+                        <label for="fulice">Ulice a č.p.:</label><br>
+                        <input type="text" id="fulice" name="fulice"><br>
+                        <label for="fpsc">PSČ:</label><br>
+                        <input type="text" id="fpsc" name="fpsc"><br><br>
+                    </section>
+                    <button class="orderflow-button" type="button" onclick="location.href='./kosik.html'">Zpět</button>
+                    <button class="orderflow-button" id="na-prehled" type="button"
+                        onclick="location.href='./prehled.html'">Dále</button>
+                </form>
+            </article>
+        </main>
+
+        <footer>
+            <i>Studentský projekt vytvořili ke dni <time datetime="2023-12-11"> 11. prosince 2023 studenti ČZU Radek
+                    Kolanda, Zdeněk Šimůnek a Matěj Krečmer.</i>
+        </footer>
+    </main>
+
+</body>
+
+</html>
